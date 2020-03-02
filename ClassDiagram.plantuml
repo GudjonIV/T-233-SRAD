@@ -1,0 +1,137 @@
+@startuml
+
+class Residence {
+    Owner
+    HomeInstance
+    __
+    GetInfo
+    ChangeOwner
+}
+
+class Home {
+    address
+    size
+    numBedrooms
+    numRooms
+    __
+    ChangeBedrooms
+    ChangeRooms
+    ChangeSize
+    GetInfo
+}
+
+class House {
+    GardenSize
+    Appliances
+    __
+    GetInfo
+    GetAppliancesList
+}
+
+class Apartment {
+    Floor
+    ElevatorBool
+    __
+    GetInfo
+}
+
+class HolidayCottage {
+    HeatingType
+    ElectricityBool
+    WaterBool
+    __
+    GetInfo
+}
+
+class Vehicle {
+    Make
+    Model
+    Year
+    Capacity
+    Owner
+    __
+    GetInfo
+    ChangeOwner
+    ChangeCapacity
+}
+
+class Boat {
+    MaxSpeed
+    MotorBool
+    Size
+    Type
+    __
+    GetInfo
+}
+
+class RV {
+    Mileage
+    NextInspection
+    Weight
+    Size
+    __
+    GetInfo
+    ChangeInspection
+    UpdateMileage
+}
+
+class HomeOwner {
+    Name
+    Age
+    Rating
+    PhoneNumber
+    HomeAddress
+    Ethnicity
+    __
+    UpdateAge
+    UpdatePhoneNumber
+    ChangeHomeAddress
+    GetInfo
+}
+
+class SwapContract {
+    Invitee
+    Invited
+    SwapTime
+    Residence1
+    Residence2
+    SocialNetwork
+    ContractTerms
+    ContractStatus
+    __
+    GetInfo
+    AcceptTerms
+    UpdateStatus
+}
+
+class SocialNetwork {
+    Name
+    Type
+    SwapFee
+    __
+    GetInfo
+    SetSwapFee
+}
+
+House "0..1"--o Residence 
+Apartment "0..1"--o Residence
+HolidayCottage "0..1"--o Residence
+Boat "0..1"--o Residence
+RV "0..1"--o Residence
+
+HomeOwner "1"-right-o Residence
+
+Home <|-- House
+Home <|-- Apartment
+Home <|-- HolidayCottage
+
+Vehicle <|-- Boat
+Vehicle <|-- RV
+
+
+Residence "2 "--o SwapContract
+HomeOwner "2  "--o SwapContract
+
+SocialNetwork "1"-left-o SwapContract
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+
+state NoOverdraft {
+    state "Balance = 0" as B1
+    state "Balance > 0" as B2: do/ApplyInterest
+
+    [*] -right-> B1
+    B1 -up-> [*]: Close Account
+
+    B1 -right-> B2: Deposit
+    B2 -left-> B1: Withdraw [W = B]
+
+    B2 --> B2: Deposit
+    B2 --> B2: Withdraw [W < B]
+}
+
+state Overdraft {
+    state "Balance = 0" as BO1
+    state "Balance > 0" as BO2: do/ApplyInterest
+    state "Balance < 0" as BO3: do/ApplyWithdrawalInterests
+    state Decision1 <<choice>>
+    
+    [*] -down-> Decision1
+    Decision1 -right-> BO1: [B = 0]
+    Decision1 -right-> BO2: [B > 0]
+    BO1 -down-> BO2: $ Added
+    BO1 -down-> BO3: Withdraw [W <= B + L]
+    BO2 -up-> BO1: Withdraw [B = W]
+    BO2 -right-> BO3: Withdraw [B < W <= B + L]
+    BO3 -up-> BO1: Deposit [D = -B]
+    BO3 -left-> BO2: Deposit [D > -B]
+
+    BO1 -up-> [*]: Close account
+}
+
+[*] -> NoOverdraft
+NoOverdraft -down-> Overdraft: Overdraft allowed
+@enduml

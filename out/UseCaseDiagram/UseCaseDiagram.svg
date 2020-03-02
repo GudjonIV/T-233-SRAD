@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="430px" preserveAspectRatio="none" style="width:1095px;height:430px;" version="1.1" viewBox="0 0 1095 430" width="1095px" zoomAndPan="magnify"><defs><filter height="300%" id="fx24p7epxln8k" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[99b31deea5d7419a569cd5090bf83263]
+cluster System--><rect fill="#D3D3D3" filter="url(#fx24p7epxln8k)" height="346" style="stroke: #000000; stroke-width: 1.5;" width="747" x="171" y="24.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="58" x="515.5" y="39.4951">System</text><ellipse cx="269.1543" cy="147.5236" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="58.1543" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="78" x="230.1543" y="152.1721">Rent a bike</text><ellipse cx="268.7696" cy="211.5236" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="39.7696" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="242.7696" y="216.1721">Sign up</text><ellipse cx="547.3417" cy="265.6683" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="66.3417" ry="15.6683" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="97" x="498.8417" y="270.3168">Get discounts</text><ellipse cx="547.3339" cy="159.5668" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="63.3339" ry="15.0668" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="89" x="502.8339" y="164.2152">Pay for rental</text><ellipse cx="822.2901" cy="98.258" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="79.2901" ry="18.258" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="129" x="757.7901" y="102.9065">Use Pay-as-you-go</text><ellipse cx="547.4975" cy="333.5236" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="52.4975" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="512.4975" y="338.1721">Find bikes</text><ellipse cx="547.7036" cy="94.6407" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="63.7036" ry="15.1407" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="90" x="502.7036" y="99.2892">Reserve bike</text><ellipse cx="269.0685" cy="275.5236" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="59.5685" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="229.0685" y="280.1721">Return bike</text><ellipse cx="268.8427" cy="78.2685" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="81.8427" ry="18.7685" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="135" x="201.3427" y="82.917">Receive penalty fee</text><ellipse cx="268.9619" cy="339.5236" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="48.9619" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65" x="236.4619" y="344.1721">Alert BBR</text><!--MD5=[ae78ca0dd1f49bdd788e5556d70823ac]
+entity Customer--><ellipse cx="65" cy="180.5" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M65,188.5 L65,215.5 M52,196.5 L78,196.5 M65,215.5 L52,230.5 M65,215.5 L78,230.5 " fill="none" filter="url(#fx24p7epxln8k)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="68" x="31" y="248.9951">Customer</text><!--MD5=[4ae6c01ea194f6ca19426e82e7d40486]
+entity System_Manager--><ellipse cx="65" cy="348.5" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M65,356.5 L65,383.5 M52,364.5 L78,364.5 M65,383.5 L52,398.5 M65,383.5 L78,398.5 " fill="none" filter="url(#fx24p7epxln8k)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="6" y="416.9951">System_Manager</text><!--MD5=[1a01d8a19c76036b8fa8466ed8338383]
+entity Payment_System--><ellipse cx="1024" cy="67.5" fill="#F8F8FF" filter="url(#fx24p7epxln8k)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M1024,75.5 L1024,102.5 M1011,83.5 L1037,83.5 M1024,102.5 L1011,117.5 M1024,102.5 L1037,117.5 " fill="none" filter="url(#fx24p7epxln8k)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="965" y="135.9951">Payment_System</text><!--MD5=[f289f2f19dd2916740c2eaad5169584c]
+link Customer to Rent a bike--><path d="M99.1606,200.353 C117.872,194.115 141.703,186.257 163,179.5 C185.524,172.353 210.863,164.622 231.005,158.55 " fill="none" id="Customer-Rent a bike" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[270635a3281cee71623a02d7ab494b2e]
+link Customer to Sign up--><path d="M99.3562,211.5 C134.879,211.5 191.061,211.5 228.704,211.5 " fill="none" id="Customer-Sign up" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8ce743e0dfc17c9eaa65af8156030e4e]
+link Sign up to Get discounts--><path d="M299.921,220.753 C315.682,226.252 335.006,234.01 351,243.5 C365.927,252.356 364.681,262.592 381,268.5 C418.019,281.903 462.814,280.101 496.46,275.53 " fill="none" id="Sign up-Get discounts" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="382" y="264.5669">«Includes»</text><!--MD5=[1316a7f51f18d8e7190711b73e7037df]
+link Pay for rental to Use Pay-as-you-go--><path d="M594.194,149.29 C640.945,138.844 713.706,122.586 764.265,111.289 " fill="none" id="Pay for rental-Use Pay-as-you-go" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="67" x="645" y="120.5669">«Extends»</text><!--MD5=[c2c3c25b768ce14a2adad1ef9882041c]
+link Rent a bike to Find bikes--><path d="M304.244,159.114 C318.967,164.591 336.166,171.65 351,179.5 C398.505,204.638 414.259,208.272 451,247.5 C468.977,266.694 462.028,280.29 481,298.5 C491.139,308.232 504.518,316.021 516.541,321.7586 " fill="none" id="Rent a bike-Find bikes" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="67" x="382.5" y="191.5669">«Extends»</text><!--MD5=[34f7a47330ea1ec4fdb1c0aeaa89fdee]
+link Rent a bike to Pay for rental--><path d="M325.028,151.328 C342.877,152.474 362.773,153.65 381,154.5 C415.027,156.086 453.013,157.276 484.003,158.095 " fill="none" id="Rent a bike-Pay for rental" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="382" y="150.5669">«Includes»</text><!--MD5=[e380eab175d3e46214ca2e5d3387bff2]
+link Rent a bike to Reserve bike--><path d="M315.658,138.748 C365.816,129.134 446.066,113.751 497.51,103.89 " fill="none" id="Rent a bike-Reserve bike" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="67" x="382.5" y="109.5669">«Extends»</text><!--MD5=[7a7d6a7e473bf3dee7a2c7a6ad57f19b]
+link Customer to Return bike--><path d="M99.1606,222.647 C117.872,228.885 141.703,236.743 163,243.5 C185.342,250.589 210.454,258.253 230.517,264.303 " fill="none" id="Customer-Return bike" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[f7f69dab3f926e68db4cc916ada49034]
+link Customer to Receive penalty fee--><path d="M99.0761,171.303 C116.464,152.261 139.104,130.465 163,115.5 C178.398,105.857 196.645,98.307 213.572,92.613 " fill="none" id="Customer-Receive penalty fee" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[f23b2c622f90937fa2fc28680457211e]
+link Customer to Alert BBR--><path d="M98.8046,252.141 C116.126,271.292 138.788,293.052 163,307.5 C182.638,319.219 206.936,326.9822 227.211,331.9238 " fill="none" id="Customer-Alert BBR" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[32f1b8fdf0e1ba2ac6a0304607589252]
+link System_Manager to Find bikes--><path d="M124.051,380.6467 C181.778,381.1347 272.773,380.1415 351,371.5 C405.816,365.4447 468.216,352.1837 507.472,343.0466 " fill="none" id="System_Manager-Find bikes" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[386f8ffcd28fa8958aab41566246448d]
+link System_Manager to Alert BBR--><path d="M124.156,367.984 C157.373,361.4063 198.18,353.3257 227.835,347.4534 " fill="none" id="System_Manager-Alert BBR" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[032855c66d529882df49da405118c90a]
+link Pay for rental to Payment_System--><path d="M611.05,160.842 C686.554,161.209 816.972,157.824 926,134.5 C938.823,131.757 952.22,127.651 964.821,123.182 " fill="none" id="Pay for rental-Payment_System" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7adf40da05f8b4ca0644c3e9c82794a2]
+link Receive penalty fee to Payment_System--><path d="M344.615,71.018 C384.949,67.345 435.65,63.324 481,61.5 C576.794,57.647 884.533,54.985 926,62.5 C938.903,64.838 952.334,68.771 964.944,73.197 " fill="none" id="Receive penalty fee-Payment_System" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ae3fe69446841bf6b05167d5155795a6]
+@startuml
+skinparam usecase {
+    BackgroundColor GhostWhite
+}
+skinparam ActorBackgroundColor GhostWhite
+
+
+actor Customer 
+actor System_Manager
+actor Payment_System
+
+rectangle System{
+    left to right direction
+    skinparam RectangleBackgroundColor lightgray
+    Customer - - (Rent a bike)
+    Customer - - (Sign up)
+    (Sign up) .. (Get discounts): <<Includes>>
+    (Pay for rental) .. (Use Pay-as-you-go): <<Extends>>
+    (Rent a bike) .. (Find bikes): <<Extends>>
+    (Rent a bike) .. (Pay for rental): <<Includes>>
+    (Rent a bike) .. (Reserve bike): <<Extends>>
+    Customer - - (Return bike)
+    Customer - - (Receive penalty fee)
+    Customer - - (Alert BBR)
+    System_Manager - - (Find bikes)
+    System_Manager - - (Alert BBR)
+    (Pay for rental) - - - Payment_System
+    (Receive penalty fee) - - - Payment_System
+}
+@enduml
+
+PlantUML version 1.2020.01beta5(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

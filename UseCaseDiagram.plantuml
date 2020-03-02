@@ -1,0 +1,33 @@
+@startuml
+
+
+skinparam usecase {
+    BackgroundColor GhostWhite
+}
+skinparam ActorBackgroundColor GhostWhite
+
+
+actor Customer 
+actor System_Manager
+actor Payment_System
+
+rectangle System{
+    left to right direction
+    skinparam RectangleBackgroundColor lightgray
+    Customer -- (Rent a bike)
+    Customer -- (Sign up)
+    (Sign up) .. (Get discounts): <<Includes>>
+    (Pay for rental) .. (Use Pay-as-you-go): <<Extends>>
+    (Rent a bike) .. (Find bikes): <<Extends>>
+    (Rent a bike) .. (Pay for rental): <<Includes>>
+    (Rent a bike) .. (Reserve bike): <<Extends>>
+    Customer -- (Return bike)
+    Customer -- (Receive penalty fee)
+    Customer -- (Alert BBR)
+    System_Manager -- (Find bikes)
+    System_Manager -- (Alert BBR)
+    (Pay for rental) --- Payment_System
+    (Receive penalty fee) --- Payment_System
+}
+
+@enduml
