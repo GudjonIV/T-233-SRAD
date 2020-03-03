@@ -23,13 +23,14 @@ class Player {
     +Board: Board [1]
     +UpdateScore()
     +ResetBoard()
+    +GetMove(): Tuple
 }
 
 class Ship {
     -{static}SIZE: Int
     +Health: List
     +IsSunk: Bool
-    +UpdateHealth()
+    +UpdateHealth(hitIndex)
     +SinkShip()
 }
 
