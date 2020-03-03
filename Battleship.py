@@ -11,9 +11,6 @@ class Game():
                 self.playTurn()
             continuePlay = input("Play another game? (Y/N): ").upper()
 
-    def quitGame(self):
-        pass
-
     def displayScore(self):
         pass
 
@@ -22,9 +19,15 @@ class Game():
 
     def playTurn(self):
         if self.turn % 2 == 0:
-            move = self.player1.getMove()
+            while True:
+                move = self.player1.getMove()
+                if self.player2.board.check_move(move):
+                    break
         else:
-            move = self.player2.getMove()
+            while True:
+                move = self.player2.getMove()
+                if self.player1.board.check_move(move):
+                    break
         self.turn += 1
 
 class Player():
@@ -36,12 +39,13 @@ class Player():
         pass
 
     def resetBoard(self):
-        pass
+        self.board = Board()
 
     def getMove(self):
         move = input("Where would you like to attack? 'A-H 1-8': ").split(" ")
-        move[1] = 65 - ord(move[1].upper())
-        retu
+        move[0] = 65 - ord(move[0].upper())
+        move[1] = int(move[1]) - 1
+        return move
     
     def fleetStatus(self):
         return self.board.fleet.fleetStatus()
@@ -57,6 +61,9 @@ class Board():
             print (index + 1, " " + "  ".join(row))
 
     def updateBoard(self, cordTuple):
+        pass
+
+    def check_move(self, moveTuple):
         pass
 
     def placeShips(self):
@@ -84,9 +91,9 @@ class Ship():
         if self.health[hitIndex] == "X":
             return print ("Already hit there!")
         self.health[hitIndex] = "X"
-        self.SinkShip()
+        self.__SinkShip()
 
-    def SinkShip(self):
+    def __SinkShip(self):
         if self.health == ["X"] * self.SIZE:
             self.isSunk = True
             print ("Ship sunk!")

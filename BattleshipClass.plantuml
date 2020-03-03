@@ -5,8 +5,8 @@ class Game {
     +Player2: Player 
     -Turn: Int
     +StartGame()
-    +QuitGame()
     +DisplayScore()
+    +PlayTurn()
     -UpdateScore()
 }
 
@@ -16,6 +16,7 @@ class Board {
     +PrintBoard()
     +UpdateBoard()
     +PlaceShips()
+    +CheckMove(moveTuple)
 }
 
 class Player {
@@ -24,6 +25,7 @@ class Player {
     +UpdateScore()
     +ResetBoard()
     +GetMove(): Tuple
+    +FleetStatus(): Bool
 }
 
 class Ship {
@@ -31,7 +33,7 @@ class Ship {
     +Health: List
     +IsSunk: Bool
     +UpdateHealth(hitIndex)
-    +SinkShip()
+    -SinkShip()
 }
 
 class Battleship {
@@ -47,13 +49,14 @@ class Minesweeper {
 }
 
 class Fleet {
-    + Battleship: Battleship [1]
-    + Destroyer: Destroyer [1]
-    + Minesweeper: Minesweeper [2]
+    +Battleship: Battleship [1]
+    +Destroyer: Destroyer [1]
+    +Minesweeper: Minesweeper [2]
+    +FleetStatus(): Bool
 }
 
 Player "2 "-down-* Game
-Board -right-* Player
+Board -right-o Player
 Fleet -right-* Board
 
 Battleship --* Fleet
