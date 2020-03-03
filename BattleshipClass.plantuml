@@ -1,9 +1,9 @@
 @startuml
 
 class Game {
-    +Player1: Player
-    +Player2: Player
-    --
+    +Player1: Player 
+    +Player2: Player 
+    -Turn: Int
     +StartGame()
     +QuitGame()
     +DisplayScore()
@@ -11,47 +11,55 @@ class Game {
 }
 
 class Board {
-    +BoardMatrix: List
-    +Fleet: Fleet
-    --
+    +BoardGrid: List
+    +Fleet: Fleet [1]
     +PrintBoard()
-    -UpdateBoard()
-
+    +UpdateBoard()
+    +PlaceShips()
 }
 
 class Player {
     +Score: Int
-    --
+    +Board: Board [1]
     +UpdateScore()
 }
 
-abstract class Ship {
-    -Size: Int
+class Ship {
+    -{static}SIZE: Int
     +Health: List
     +IsSunk: Bool
-    --
     +UpdateHealth()
     +SinkShip()
 }
 
 class Battleship {
-
-
+    -{static}SIZE: int = 5 
 }
 
 class Destroyer {
-
-
+    -{static}SIZE: int = 3 
 }
 
 class Minesweeper {
-
-
+    -{static}SIZE: int = 2 
 }
 
 class Fleet {
-    + Battleship: [1] Battleship
-
+    + Battleship: Battleship [1]
+    + Destroyer: Destroyer [1]
+    + Minesweeper: Minesweeper [2]
 }
+
+Player "2 "-down-* Game
+Board -right-* Player
+Fleet -right-* Board
+
+Battleship --* Fleet
+Destroyer --* Fleet
+Minesweeper --* Fleet
+
+Battleship -up-|> Ship
+Destroyer -up-|> Ship
+Minesweeper -up-|> Ship
 
 @enduml
