@@ -9,6 +9,8 @@ class Game():
         while continuePlay == "Y":
             while self.player1.fleetStatus() and self.player2.fleetStatus():
                 self.playTurn()
+            player1.resetBoard()
+            plaayer2.resetBoard()
             continuePlay = input("Play another game? (Y/N): ").upper()
 
     def displayScore(self):
@@ -23,11 +25,13 @@ class Game():
                 move = self.player1.getMove()
                 if self.player2.board.check_move(move):
                     break
+                print ("Already shot there")
         else:
             while True:
                 move = self.player2.getMove()
                 if self.player1.board.check_move(move):
                     break
+                print ("Already shot there")
         self.turn += 1
 
 class Player():
